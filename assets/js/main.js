@@ -7,9 +7,15 @@ var spy = new Gumshoe('#nav  a');
     })
 
     // Darkmode
-    $('.darkmode-btn').on('click', function (event) {
+    $(document).ready(function() {
+        // Code to toggle dark mode when the button is clicked
+        $('.darkmode-btn').on('click', function(event) {
+            $('body').toggleClass('darkmode');
+        });
+        
+        // Ta'avol e automatic dark mode be surat khodkar dar avvalin bar ejra shavad.
         $('body').toggleClass('darkmode');
-    })
+    });
 
     // modal
     $('.btn-view').on('click', function (event) {
